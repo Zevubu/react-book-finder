@@ -40,10 +40,10 @@ const SavedResult = props => {
                                 </Row>
                                 <br></br>
                                 <Row className="buttonDiv ">
-                                    <button className="deleteBook btn btn-danger" id={savedbook._id} onClick={() => props.handleDeleteButton(savedbook._id)}>
+                                    <button className="deleteBook btn btn-danger" id={savedbook.id} onClick={() => props.handleDeleteButton(savedbook._id)}>
                                         Delete Book
                                     </button>
-                                    <a href={savedbook.link} target="_blank">
+                                    <a href={savedbook.link} target="_blank" rel="noopener noreferrer">
                                         <button className="viewBook btn btn-success">
                                             View Book
                                         </button>

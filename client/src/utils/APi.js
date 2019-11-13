@@ -11,14 +11,17 @@ export default{
     },
     // Get book by id.
     getBook: function(id){
+        console.log(`id:${id}`);
         return axios.get("/api/books/" + id);
     },
     // Save a book to database
     saveBook: function(savedBooks){
-        return axios.post("/api/books", savedBooks);
+        console.log(savedBooks)
+        return axios.post("/api/books/", savedBooks);
     },
     // Delete a book by id
     deleteBook: function(id){
+        console.log(`id:${id}`);
         return axios.delete("/api/books/" + id);
     }
 

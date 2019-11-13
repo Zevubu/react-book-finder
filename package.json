@@ -2,7 +2,7 @@
   "name": "react-book-finder",
   "version": "1.0.0",
   "description": "google api book finder",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/Zevubu/react-book-finder.git",
   "author": "Zev Hoffman <zevubu@gmail.com>",
   "license": "MIT",
