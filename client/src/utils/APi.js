@@ -17,7 +17,15 @@ export default{
     // Save a book to database
     saveBook: function(savedBooks){
         console.log(savedBooks)
-        return axios.post("/api/books/", savedBooks);
+        // if (savedBooks.description = undefined){
+        //     savedBooks.description = " ";
+        //     console.log(savedBooks)
+        //     return axios.post("/api/books/", savedBooks);
+        // }else{
+            return axios.post("/api/books/", savedBooks);
+        // }
+        
+        
     },
     // Delete a book by id
     deleteBook: function(id){

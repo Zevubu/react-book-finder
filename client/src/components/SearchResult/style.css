@@ -1,11 +1,14 @@
 .card{
-    border-radius: 10px;
-    background-color: lightgrey
+    
+    background: #183738;
+    border-radius: 15px;
+    color: aliceblue;
 }
 
 .search-list{
+    margin-top: 20px;
     border-radius: 15px;
-    background-color: lightblue
+    background-color:#635130;
 }
 
 .saveBook {

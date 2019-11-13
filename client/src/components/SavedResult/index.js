@@ -5,9 +5,9 @@ import {Row, Col} from "../Grid"
 const SavedResult = props => {
     return (props.savedBooks.length === 0) ? (
         <div className="card">
-            <div className="card-body player">
+            <div className="card-body">
                 <div className="article">
-                    <h3>Books that You Saved</h3>
+                    <h3>Saved Books:</h3>
                 </div>
             </div>
         </div>
@@ -18,7 +18,7 @@ const SavedResult = props => {
                     <h3>Books that You Saved</h3>
                     {props.savedBooks.map(savedbook => {
                         return (
-                            <li className="saved-list list-group-item">
+                            <div className="saved-list list-group-item">
                                 <Row className="SearchResult" id={savedbook.title + "Card"} key={savedbook._id}>
                                     {/* col-3 show image of the book */}
                                     <Col size="2" className="bookImage">
@@ -49,7 +49,7 @@ const SavedResult = props => {
                                         </button>
                                     </a>
                                 </Row>
-                            </li>
+                            </div>
                         );
                     })}
                 </div>

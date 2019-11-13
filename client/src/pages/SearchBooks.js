@@ -59,9 +59,12 @@ class SearchBooks extends Component {
         console.log(`this.state.books:${this.state.books}`)
         let savedBooks = this.state.books.filter(book => book.id === event.target.id)
         savedBooks = savedBooks[0];
+        // if (savedBooks.description = undefined){
+        //     savedBooks.description = "";
+        // }
         API.saveBook(savedBooks)
             .then(book => {console.log(book)})
-            .catch(err => {console.log("$%^&(*&%$")})
+            .catch(err => {console.log(err)})
     }
     render() {
         return (
